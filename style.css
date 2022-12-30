@@ -37,6 +37,7 @@ body{
     position: absolute;
     bottom: 5%;
     left: 20%;
+    animation: oldschool 1s linear infinite;
    
 }
 /*animation*/
@@ -45,5 +46,8 @@ body{
     100% {transform: translateX(-2950px);}
 }
     
-from {left: 0%;}
-to {left:65% ;}
+@keyframes oldschool {
+    100% {transform: translateY(-1px);}
+    50% {transform: translateY(2px);}
+    0% {transform: translateY(-1px);}
+}
