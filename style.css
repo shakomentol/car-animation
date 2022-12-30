@@ -17,23 +17,33 @@ body{
     background-size: cover;
     box-shadow: 1px 2px 40px black;
     animation-name: animation;
+    overflow-x: hidden;
 }
+.surface {
+    height:140px ;
+    width: 500%;
+    background-image: url(pictures/Img_02.png);
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: animation 6s linear infinite;
+
+
+}
+
 .car {
     position: absolute;
     bottom: 5%;
     left: 20%;
-    animation-name: animation;
-    animation-delay: 0.3s;
-    animation-duration: 7s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+   
 }
 /*animation*/
 
 @keyframes animation {
-    from {left: 0%;}
-    to {left:65% ;}
+    100% {transform: translateX(-2950px);}
 }
-   
     
-    
+from {left: 0%;}
+to {left:65% ;}
