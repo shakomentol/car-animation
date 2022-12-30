@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 60, 255);
+    min-height: 100vh;
+}
+.night {
+    position: relative;
+    height: 80vh;
+    width: 58vw;
+    margin: 5rem auto;
+    margin-top: 60px;
+    background-image: url(pictures/Img_1.png);
+    background-size: cover;
+    box-shadow: 1px 2px 40px black;
+    animation-name: animation;
+}
+.car {
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    animation-name: animation;
+    animation-delay: 0.3s;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+/*animation*/
+
+@keyframes animation {
+    from {left: 0%;}
+    to {left:65% ;}
+}
+   
+    
+    
